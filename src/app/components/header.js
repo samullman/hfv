@@ -1,4 +1,5 @@
-import { Box } from "@chakra-ui/react";
+import Link from "next/link";
+import { Box, Link as ChakraLink } from "@chakra-ui/react";
 import MySidebar from "./sidebar";
 
 function Header() {
@@ -21,7 +22,10 @@ function Header() {
         alignItems="baseline"
       >
         <Box title="title" pt="2px">
-          Huck Finn Ventures
+          <Link href="/" passHref>
+            {" "}
+            <ChakraLink>Huck Finn Ventures</ChakraLink>
+          </Link>
         </Box>
 
         <Box title="hamburger">
