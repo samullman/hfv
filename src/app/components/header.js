@@ -4,16 +4,7 @@ import MySidebar from "./sidebar";
 
 function Header() {
   return (
-    <Box
-      position="fixed"
-      zIndex="1000"
-      width="100vw"
-      bg="white"
-      py={2}
-      px={5}
-      borderBottom={"1px"}
-      borderBottomColor={"gray.400"}
-    >
+    <Box position="fixed" zIndex="1000" width="100vw" bg="white" py={2} px={5}>
       <Box
         maxWidth="1000px"
         margin="0 auto"

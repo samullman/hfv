@@ -18,6 +18,7 @@ import {
   Stack,
   Box,
   Link as ChakraLink,
+  Text,
 } from "@chakra-ui/react";
 
 import { LuMenu } from "react-icons/lu";
@@ -62,11 +63,14 @@ function Component() {
         <DrawerOverlay />
         <DrawerContent textAlign="center">
           <DrawerCloseButton />
-          <DrawerHeader mt={5}>
-            <Heading size="lg">Huck Finn Ventures</Heading>
-          </DrawerHeader>
 
           <DrawerBody>
+            <Heading mt={4} mb={2} size="lg">
+              Huck Finn Ventures
+            </Heading>
+            <Text mb={4} fontSize="sm" fontStyle={"italic"}>
+              General construction, with an edge!
+            </Text>
             <Stack>
               {pages.map((el, idx) => {
                 return (
