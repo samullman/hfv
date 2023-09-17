@@ -1,6 +1,5 @@
-import { Box, Button, IconButton } from "@chakra-ui/react";
-
-import { LuMenu } from "react-icons/lu";
+import { Box } from "@chakra-ui/react";
+import MySidebar from "./sidebar";
 
 function Header() {
   return (
@@ -26,11 +25,7 @@ function Header() {
         </Box>
 
         <Box title="hamburger">
-          <IconButton
-            fontSize="xl"
-            variant={"ghost"}
-            icon={<LuMenu />}
-          ></IconButton>
+          <MySidebar />
         </Box>
       </Box>
     </Box>
