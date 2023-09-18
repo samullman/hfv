@@ -1,7 +1,13 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
-function Component() {
-  return <div> </div>;
+function Component({ children }) {
+  return (
+    <Box px={5} py={2}>
+      <Box maxWidth={"1000px"} margin="0 auto">
+        {children}
+      </Box>
+    </Box>
+  );
 }
 
 export default Component;

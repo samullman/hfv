@@ -3,6 +3,9 @@ import Image from "next/image";
 
 import { Box, HStack, Heading, Button } from "@chakra-ui/react";
 
+import Container from "@/app/components/container";
+import Section from "@/app/components/section";
+
 export default function Home() {
   return (
     <div>
@@ -44,7 +47,11 @@ export default function Home() {
         <Image src="/river.jpeg" layout="fill" objectFit="cover" />
       </Box>
 
-      <Box id="learn-more" height="100vh"></Box>
+      <Box id="learn-more" height="100vh">
+        <Section>
+          <Container>Learn more</Container>
+        </Section>
+      </Box>
     </div>
   );
 }
