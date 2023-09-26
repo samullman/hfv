@@ -1,7 +1,21 @@
-import { Box, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Link as ChakraLink,
+  HStack,
+  Divider,
+  SimpleGrid,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+  Button,
+} from "@chakra-ui/react";
 
 import Container from "@/app/components/container";
 import Section from "@/app/components/section";
+
+import { LuPhoneCall, LuMail, LuMapPin } from "react-icons/lu";
 
 export const metadata = {
   title: "Contact",
@@ -13,7 +27,82 @@ function Page() {
     <div>
       <Section>
         <Container>
-          <Heading>Contact</Heading>
+          <Heading mb={5}>Contact</Heading>
+
+          <Heading size="md" mb={2}>
+            Huck Finn Ventures
+          </Heading>
+
+          <Box></Box>
+
+          <HStack>
+            <Box>
+              <LuMapPin />
+            </Box>
+
+            <Box>
+              <ChakraLink href="https://maps.app.goo.gl/s1C5ECH4Z2hiN1jh9">
+                Austin, TX
+              </ChakraLink>
+            </Box>
+          </HStack>
+
+          <HStack>
+            <Box>
+              <LuPhoneCall />
+            </Box>
+
+            <Box>
+              <ChakraLink href="tel:9713235674">971-323-56784</ChakraLink>
+            </Box>
+          </HStack>
+
+          <HStack>
+            <Box>
+              <LuMail />
+            </Box>
+
+            <Box>
+              <ChakraLink href="mailto:info@hf.ventures">
+                info@hf.ventures
+              </ChakraLink>
+            </Box>
+          </HStack>
+
+          <Divider my={5} />
+
+          <SimpleGrid columns={[1, 1, 2]} spacing={[3, 4, 5]} mb={[3, 4, 5]}>
+            <FormControl>
+              <FormLabel>Name</FormLabel>
+              <Input />
+            </FormControl>
+
+            <FormControl>
+              <FormLabel>Email</FormLabel>
+              <Input />
+            </FormControl>
+
+            <FormControl>
+              <FormLabel>Phone</FormLabel>
+              <Input />
+            </FormControl>
+
+            <FormControl>
+              <FormLabel>Company</FormLabel>
+              <Input />
+            </FormControl>
+
+            <FormControl>
+              <FormLabel>Message</FormLabel>
+              <Textarea />
+            </FormControl>
+          </SimpleGrid>
+
+          <Box>
+            <Button colorScheme="blue">Submit</Button>
+          </Box>
+
+          <Divider my={5} />
         </Container>
       </Section>
     </div>

@@ -33,10 +33,7 @@ function Header() {
         </Box>
       </Box>
 
-      <Box>
-        py={2}
-        px={5}
-      </Box>
+      <Box py={2} px={5}></Box>
     </div>
   );
 }

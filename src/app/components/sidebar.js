@@ -40,6 +40,11 @@ function Component() {
     },
 
     {
+      title: "Services",
+      slug: "/services",
+    },
+
+    {
       title: "Contact",
       slug: "/contact",
     },
