@@ -29,14 +29,16 @@ export default function Home() {
 
           <Box>
             <HStack>
-              <Button
-                colorScheme="blue"
-                as="a"
-                href="#learn-more"
-                scrollBehavior="smooth"
-              >
-                Learn more
-              </Button>
+              <Link href="/about" passHref>
+                <Button
+                  colorScheme="blue"
+                  // as="a"
+                  // href="#learn-more"
+                  // scrollBehavior="smooth"
+                >
+                  Learn more
+                </Button>
+              </Link>
 
               <Link href="/contact" passHref>
                 <Button colorScheme="yellow">Contact</Button>
@@ -47,7 +49,7 @@ export default function Home() {
         <Image src="/river.jpeg" layout="fill" objectFit="cover" />
       </Box>
 
-      <Box id="learn-more" height="100vh">
+      <Box id="learn-more" height="100vh" display="none">
         <Section>
           <Container>Learn more</Container>
         </Section>
