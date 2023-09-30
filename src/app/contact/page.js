@@ -98,11 +98,11 @@ function Page() {
             </FormControl>
           </SimpleGrid>
 
-          <Box mb={2}>
+          <Box mb={3}>
             <Button colorScheme="blue">Submit</Button>
           </Box>
 
-          <Box color="red.500">* Form is inactive</Box>
+          <Box color="red.500">* Form under construction</Box>
           {/* <Divider my={5} /> */}
         </Container>
       </Section>

@@ -68,8 +68,8 @@ function Component() {
             <Heading mt={4} mb={2} size="lg">
               Huck Finn Ventures
             </Heading>
-            <Text mb={4} fontSize="sm" fontStyle={"italic"}>
-              General construction, with an edge!
+            <Text title="subheader" mb={4} fontSize="sm" fontStyle={"italic"}>
+              {/* Desig & Build */}
             </Text>
             <Stack>
               {pages.map((el, idx) => {

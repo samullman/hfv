@@ -17,15 +17,16 @@ function Page() {
           <Heading mb={5}>About</Heading>
 
           <Box mb={2}>
-            We do General Construction in the Central Texas area: carpentry,
-            concrete, demolition, excavation, and small builds.{" "}
+            Huck Finn Ventues is a unique <i>Design & Build</i> company in the
+            Austin, TX area. We work with fantastic contractors and partners to
+            bring everlasting designs to life.
           </Box>
 
           <Box>
             <Link href="/contact" passHref>
               <ChakraLink>Hire us</ChakraLink>
-            </Link>{" "}
-            for projects <b>big</b> and <i>small</i>.
+            </Link>
+            .
           </Box>
         </Container>
       </Section>

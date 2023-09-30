@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Box, HStack, Heading, Button } from "@chakra-ui/react";
+import { Box, HStack, Heading, Button, Text } from "@chakra-ui/react";
 
 import Container from "@/app/components/container";
 import Section from "@/app/components/section";
@@ -24,7 +24,8 @@ export default function Home() {
           flexDirection={"column"}
         >
           <Box maxWidth={"500px"} textAlign={"center"} mb={6}>
-            <Heading>General Construction in the Austin, TX area!</Heading>
+            <Heading>Design & Build</Heading>
+            <Text>Unique structures in Central Texas.</Text>
           </Box>
 
           <Box>
