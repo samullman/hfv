@@ -17,17 +17,16 @@ function Page() {
           <Heading mb={5}>About</Heading>
 
           <Box mb={2}>
-            Huck Finn Ventues is a unique <i>Design & Build</i> company in the
-            Austin, TX area. We work with fantastic contractors and partners to
-            bring everlasting designs to life.
+            Huck Finn Ventues is a unique design & build company based in Austin, TX.
+
+
           </Box>
 
-          <Box>
-            <Link href="/contact" passHref>
-              <ChakraLink>Hire us</ChakraLink>
-            </Link>
-            .
+          <Box mb={2}>
+            It{"'"}s an exciting time to be a builder.
           </Box>
+
+
         </Container>
       </Section>
     </div>

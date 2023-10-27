@@ -1,15 +1,21 @@
+"use client";
+
 import Link from "next/link";
-import { Box, Link as ChakraLink } from "@chakra-ui/react";
+import { Box, Link as ChakraLink, HStack, useColorModeValue } from "@chakra-ui/react";
 import MySidebar from "./sidebar";
+import ColorMode from "./colorMode"
 
 function Header() {
+
+  let bg = useColorModeValue("white", "gray.800")
+
   return (
     <div>
       <Box
         position="fixed"
         zIndex="1000"
         width="100vw"
-        bg="white"
+        bg={bg}
         py={2}
         px={5}
       >
@@ -27,9 +33,18 @@ function Header() {
             </Link>
           </Box>
 
-          <Box title="hamburger">
-            <MySidebar />
-          </Box>
+          <HStack>
+
+            <Box title="toggle-color-mode">
+              <ColorMode />
+            </Box>
+
+
+            <Box title="hamburger">
+              <MySidebar />
+            </Box>
+
+          </HStack>
         </Box>
       </Box>
 

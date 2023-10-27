@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -38,6 +37,18 @@ function Component() {
       title: "About",
       slug: "/about",
     },
+
+    {
+      title: "Gallery",
+      slug: "/gallery",
+    },
+
+
+    {
+      title: "Services",
+      slug: "/services",
+    },
+
 
     {
       title: "Contact",

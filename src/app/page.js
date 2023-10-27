@@ -1,12 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
-import { Box, HStack, Heading, Button, Text } from "@chakra-ui/react";
+import { Box, HStack, Heading, Button, Text, useColorModeValue } from "@chakra-ui/react";
 
 import Container from "@/app/components/container";
 import Section from "@/app/components/section";
 
 export default function Home() {
+
+  let image = useColorModeValue("/river.jpeg", "/river-2.jpeg")
   return (
     <div>
       <Box
@@ -23,20 +27,18 @@ export default function Home() {
           alignItems={"center"}
           flexDirection={"column"}
         >
-          <Box maxWidth={"500px"} textAlign={"center"} mb={6}>
-            <Heading>Design & Build</Heading>
-            <Text>Unique structures in Central Texas.</Text>
-          </Box>
-
-          <Box>
+          <Box maxWidth={"500px"} textAlign={"center"}>
+            <Heading mb={2}>Like A Dream</Heading>
+            <Text mb={4}>General Construction in Central Texas.</Text>
             <HStack>
               <Link href="/about" passHref>
-                <Button
-                  colorScheme="blue"
-                  // as="a"
-                  // href="#learn-more"
-                  // scrollBehavior="smooth"
-                >
+                <Button colorScheme="green" >
+                  Services
+                </Button>
+              </Link>
+
+              <Link href="/about" passHref>
+                <Button colorScheme="blue" >
                   Learn more
                 </Button>
               </Link>
@@ -47,7 +49,9 @@ export default function Home() {
             </HStack>
           </Box>
         </Box>
-        <Image src="/river.jpeg" layout="fill" objectFit="cover" />
+
+
+        <Image src={image} layout="fill" objectFit="cover" />
       </Box>
 
       <Box id="learn-more" height="100vh" display="none">

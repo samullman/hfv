@@ -27,11 +27,7 @@ function Page() {
     <div>
       <Section>
         <Container>
-          <Heading mb={5}>Contact</Heading>
-
-          <Heading size="md" mb={2}>
-            Huck Finn Ventures
-          </Heading>
+          <Heading mb={6}>Contact</Heading>
 
           <Box></Box>
 
