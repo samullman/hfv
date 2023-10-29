@@ -29,7 +29,7 @@ export default function Home() {
         >
           <Box maxWidth={"500px"} textAlign={"center"}>
             <Heading mb={2}>Like A Dream</Heading>
-            <Text mb={4}>General Construction in Central Texas.</Text>
+            <Text mb={4}>Property Development in Central Texas.</Text>
             <HStack>
               <Link href="/about" passHref>
                 <Button colorScheme="green" >
