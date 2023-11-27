@@ -36,11 +36,11 @@ function Page() {
               <LuMapPin />
             </Box>
 
-            <Box>
+            {/* <Box>
               <ChakraLink href="https://maps.app.goo.gl/s1C5ECH4Z2hiN1jh9">
                 Austin, TX
               </ChakraLink>
-            </Box>
+            </Box> */}
           </HStack>
 
           <HStack>
@@ -53,7 +53,7 @@ function Page() {
             </Box>
           </HStack>
 
-          <HStack>
+          {/* <HStack>
             <Box>
               <LuMail />
             </Box>
@@ -63,8 +63,8 @@ function Page() {
                 info@hf.ventures
               </ChakraLink>
             </Box>
-          </HStack>
-
+          </HStack> */}
+          {/*
           <Divider my={5} />
 
           <SimpleGrid columns={[1, 1, 2]} spacing={[3, 4, 5]} mb={[3, 4, 5]}>
@@ -98,7 +98,7 @@ function Page() {
             <Button colorScheme="blue">Submit</Button>
           </Box>
 
-          <Box color="red.500">* Form under construction</Box>
+          <Box color="red.500">* Form under construction</Box> */}
           {/* <Divider my={5} /> */}
         </Container>
       </Section>

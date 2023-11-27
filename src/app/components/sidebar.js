@@ -38,17 +38,15 @@ function Component() {
       slug: "/about",
     },
 
-    {
-      title: "Gallery",
-      slug: "/gallery",
-    },
+    // {
+    //   title: "Gallery",
+    //   slug: "/gallery",
+    // },
 
-
-    {
-      title: "Services",
-      slug: "/services",
-    },
-
+    // {
+    //   title: "Services",
+    //   slug: "/services",
+    // },
 
     {
       title: "Contact",
@@ -76,9 +74,9 @@ function Component() {
           <DrawerCloseButton />
 
           <DrawerBody>
-            <Heading mt={4} mb={2} size="lg">
+            <Box mt={4} mb={2} fontSize="lg" fontWeight={600}>
               Huck Finn Ventures
-            </Heading>
+            </Box>
             <Text title="subheader" mb={4} fontSize="sm" fontStyle={"italic"}>
               {/* Desig & Build */}
             </Text>

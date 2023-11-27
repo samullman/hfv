@@ -3,14 +3,20 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Box, HStack, Heading, Button, Text, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Heading,
+  Button,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 import Container from "@/app/components/container";
 import Section from "@/app/components/section";
 
 export default function Home() {
-
-  let image = useColorModeValue("/river.jpeg", "/river-2.jpeg")
+  let image = useColorModeValue("/river.jpeg", "/river-2.jpeg");
   return (
     <div>
       <Box
@@ -28,19 +34,12 @@ export default function Home() {
           flexDirection={"column"}
         >
           <Box maxWidth={"500px"} textAlign={"center"}>
-            <Heading mb={2}>Like A Dream</Heading>
-            <Text mb={4}>Property Development in Central Texas.</Text>
-            <HStack>
-              <Link href="/about" passHref>
-                <Button colorScheme="green" >
-                  Services
-                </Button>
-              </Link>
+            <Heading mb={2}>Property Development</Heading>
+            <Text mb={4}>Central Texas</Text>
 
+            <HStack justifyContent={"center"}>
               <Link href="/about" passHref>
-                <Button colorScheme="blue" >
-                  Learn more
-                </Button>
+                <Button colorScheme="blue">Learn more</Button>
               </Link>
 
               <Link href="/contact" passHref>
@@ -49,7 +48,6 @@ export default function Home() {
             </HStack>
           </Box>
         </Box>
-
 
         <Image src={image} layout="fill" objectFit="cover" />
       </Box>
