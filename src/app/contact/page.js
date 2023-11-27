@@ -31,17 +31,17 @@ function Page() {
 
           <Box></Box>
 
-          <HStack>
+          {/* <HStack>
             <Box>
               <LuMapPin />
             </Box>
 
-            {/* <Box>
+            <Box>
               <ChakraLink href="https://maps.app.goo.gl/s1C5ECH4Z2hiN1jh9">
                 Austin, TX
               </ChakraLink>
-            </Box> */}
-          </HStack>
+            </Box>
+          </HStack> */}
 
           <HStack>
             <Box>
