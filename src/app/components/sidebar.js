@@ -59,6 +59,7 @@ function Component() {
         fontSize="2xl"
         size="lg"
         variant={"ghost"}
+        rounded="full"
         ref={btnRef}
         icon={<LuMenu />}
         onClick={onOpen}
@@ -72,7 +73,7 @@ function Component() {
       >
         <DrawerOverlay />
         <DrawerContent textAlign="center">
-          <DrawerCloseButton size="lg" />
+          <DrawerCloseButton rounded="full" size="lg" />
 
           <DrawerBody>
             <Box mt={4} mb={10} fontSize="xl" fontWeight={600}>

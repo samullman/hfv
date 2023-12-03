@@ -10,6 +10,7 @@ function ColorMode() {
       fontSize="2xl"
       size="lg"
       variant={"ghost"}
+      rounded="full"
       onClick={toggleColorMode}
       icon={colorMode === "light" ? <LuSun /> : <LuSunDim />}
     />
