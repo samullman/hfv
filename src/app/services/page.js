@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About",
-  description: "General Construction, with an edge!",
+  description: "Huck Finn Ventures",
 };
 
 function Page() {

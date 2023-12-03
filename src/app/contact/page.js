@@ -19,7 +19,7 @@ import { LuPhoneCall, LuMail, LuMapPin } from "react-icons/lu";
 
 export const metadata = {
   title: "Contact",
-  description: "General Construction, with an edge!",
+  description: "Huck Finn Ventures",
 };
 
 function Page() {
@@ -53,17 +53,17 @@ function Page() {
             </Box>
           </HStack>
 
-          {/* <HStack>
+          <HStack>
             <Box>
               <LuMail />
             </Box>
 
             <Box>
-              <ChakraLink href="mailto:info@hf.ventures">
+              <ChakraLink href="mailto:hello@hf.ventures">
                 info@hf.ventures
               </ChakraLink>
             </Box>
-          </HStack> */}
+          </HStack>
           {/*
           <Divider my={5} />
 

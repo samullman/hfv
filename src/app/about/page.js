@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About",
-  description: "General Construction, with an edge!",
+  description: "Huck Finn Ventures",
 };
 
 function Page() {
@@ -16,9 +16,7 @@ function Page() {
         <Container>
           <Heading mb={5}>About</Heading>
 
-          <Box mb={2}>
-            Huck Finn Ventues is a design & build company based in Austin, TX.
-          </Box>
+          <Box mb={2}>Under construction.</Box>
         </Container>
       </Section>
     </div>
