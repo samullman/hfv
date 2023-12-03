@@ -47,7 +47,7 @@ function Page() {
             </Box>
 
             <Box>
-              <ChakraLink href="tel:9713235674">971-323-56784</ChakraLink>
+              <ChakraLink href="tel:9713235674">971-323-5674</ChakraLink>
             </Box>
           </HStack>
 
