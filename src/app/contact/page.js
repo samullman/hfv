@@ -27,7 +27,9 @@ function Page() {
     <div>
       <Section>
         <Container>
-          <Heading my={5}>Contact</Heading>
+          <Heading mt={5} mb={10}>
+            Contact
+          </Heading>
 
           {/* <HStack>
             <Box>
@@ -41,7 +43,7 @@ function Page() {
             </Box>
           </HStack> */}
 
-          <HStack>
+          <HStack mb={2}>
             <Box>
               <LuPhoneCall />
             </Box>

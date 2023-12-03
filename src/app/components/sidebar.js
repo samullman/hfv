@@ -56,7 +56,8 @@ function Component() {
   return (
     <>
       <IconButton
-        fontSize="xl"
+        fontSize="2xl"
+        size="lg"
         variant={"ghost"}
         ref={btnRef}
         icon={<LuMenu />}
@@ -71,16 +72,16 @@ function Component() {
       >
         <DrawerOverlay />
         <DrawerContent textAlign="center">
-          <DrawerCloseButton />
+          <DrawerCloseButton size="lg" />
 
           <DrawerBody>
-            <Box mt={4} mb={2} fontSize="lg" fontWeight={600}>
+            <Box mt={4} mb={10} fontSize="xl" fontWeight={600}>
               Huck Finn Ventures
             </Box>
             <Text title="subheader" mb={4} fontSize="sm" fontStyle={"italic"}>
               {/* Desig & Build */}
             </Text>
-            <Stack>
+            <Stack mb={10} spacing={4} fontSize="lg">
               {pages.map((el, idx) => {
                 return (
                   <Box key={"drawer-link-" + idx}>

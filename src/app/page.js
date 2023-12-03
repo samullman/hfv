@@ -39,11 +39,25 @@ export default function Home() {
 
             <HStack justifyContent={"center"}>
               <Link href="/about" passHref>
-                <Button colorScheme="blue">Learn more</Button>
+                <Button
+                  rounded="full"
+                  _hover={{ opacity: 0.84 }}
+                  size="lg"
+                  colorScheme="blue"
+                >
+                  Learn more
+                </Button>
               </Link>
 
               <Link href="/contact" passHref>
-                <Button colorScheme="yellow">Contact</Button>
+                <Button
+                  rounded="full"
+                  size="lg"
+                  _hover={{ opacity: 0.84 }}
+                  colorScheme="yellow"
+                >
+                  Contact
+                </Button>
               </Link>
             </HStack>
           </Box>

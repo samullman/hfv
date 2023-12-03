@@ -20,7 +20,7 @@ function Header() {
         zIndex="1000"
         width="100vw"
         bg={bg}
-        py={[3, 3, 2]}
+        py={[3, 3, 4]}
         px={5}
       >
         <Box
@@ -34,7 +34,7 @@ function Header() {
             <Link href="/" passHref>
               {" "}
               <ChakraLink
-                fontSize={"lg"}
+                fontSize={"xl"}
                 fontWeight={600}
                 _hover={{ textDecoration: "none" }}
               >
