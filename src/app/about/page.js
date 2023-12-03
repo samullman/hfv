@@ -14,9 +14,9 @@ function Page() {
     <div>
       <Section>
         <Container>
-          <Heading mb={5}>About</Heading>
+          <Heading my={5}>About</Heading>
 
-          <Box mb={2}>Under construction.</Box>
+          <Box mb={2}>Under construction...🏗️</Box>
         </Container>
       </Section>
     </div>

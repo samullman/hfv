@@ -27,9 +27,7 @@ function Page() {
     <div>
       <Section>
         <Container>
-          <Heading mb={6}>Contact</Heading>
-
-          <Box></Box>
+          <Heading my={5}>Contact</Heading>
 
           {/* <HStack>
             <Box>
@@ -60,7 +58,7 @@ function Page() {
 
             <Box>
               <ChakraLink href="mailto:hello@hf.ventures">
-                info@hf.ventures
+                hello@hf.ventures
               </ChakraLink>
             </Box>
           </HStack>

@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div>
       <Box
-        height="100vh"
+        minHeight="calc(90vh - 2rem)"
         position="relative"
         display="flex"
         justifyContent={"center"}
