@@ -9,6 +9,7 @@ import {
 import Container from "@/app/components/leftAligned";
 import Section from "@/app/components/section";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "About",
@@ -47,7 +48,16 @@ function Page() {
                     transition: "0.2s ease",
                   }}
                 >
-                  <Box height="200px" bg="green.200" mb={2} rounded="sm"></Box>
+                  <Box
+                    height="200px"
+                    bg="green.200"
+                    mb={2}
+                    rounded="sm"
+                    overflow="hidden"
+                    position="relative"
+                  >
+                    <Image src="/builder.jpg" layout="fill" objectFit="cover" />
+                  </Box>
                   <Box>sambuilds.co</Box>
                 </Box>
               </a>
