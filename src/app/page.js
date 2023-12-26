@@ -35,7 +35,7 @@ export default function Home() {
         >
           <Box maxWidth={"500px"} textAlign={"center"}>
             <Heading mb={2}>Property Development</Heading>
-            <Text mb={4}>Central Texas</Text>
+            <Text mb={4}>🌎</Text>
 
             <HStack justifyContent={"center"}>
               <Link href="/about" passHref>

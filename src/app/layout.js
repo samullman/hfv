@@ -14,18 +14,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <div className="container">
+      <head>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-XECM46QVV8" />
         <Script id="google-analytics">
           {`
-             window.dataLayer = window.dataLayer || [];
-             function gtag(){dataLayer.push(arguments);}
-             gtag('js', new Date());
+            function gaInit () {
+              window.data3Layer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XECM46QVV8');
+            }
 
-             gtag('config', 'G-XECM46QVV8');
-           `}
+            setTimeout(gaInit)
+         `}
         </Script>
-      </div>
+      </head>
 
       <body className={inter.className}>
         <Providers>
