@@ -9,6 +9,7 @@ import {
 import Container from "@/app/components/container";
 import Section from "@/app/components/section";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "About",
@@ -20,16 +21,31 @@ function Page() {
     {
       title: "Gym Cleaning",
       slug: "gym-cleaning",
+      image: "/weights.jpeg",
     },
 
     {
       title: "Store Cleaning",
       slug: "store-cleaning",
+      image: "/store-cleaning.jpeg",
+    },
+
+    {
+      title: "Restaurant Cleaning",
+      slug: "store-cleaning",
+      image: "/food-cart.jpeg",
     },
 
     {
       title: "Solar Panel Cleaning",
       slug: "solar-panel-cleaning",
+      image: "/solar-cleaning.jpeg",
+    },
+
+    {
+      title: "Shop Cleaning",
+      slug: "shop-cleaning",
+      image: "/shop.jpeg",
     },
   ];
 
@@ -46,10 +62,20 @@ function Page() {
           </Box>
 
           <Box width="100%">
-            <SimpleGrid columns={[1, 1, 2]} mb={10} spacing={4}>
-              {SERVICES.map(({ title, slug }, idx) => {
+            <SimpleGrid columns={[1, 1, 2]} mb={10} spacing={8}>
+              {SERVICES.map(({ title, slug, image }, idx) => {
                 return (
                   <Box key={"service-" + idx}>
+                    <Box
+                      height="200px"
+                      width="280px"
+                      position="relative"
+                      mb={2}
+                      rounded="sm"
+                      overflow="hidden"
+                    >
+                      <Image src={image} objectFit="cover" layout="fill" />
+                    </Box>
                     <Heading size="lg">{title}</Heading>
                   </Box>
                 );
