@@ -16,11 +16,12 @@ import Container from "@/app/components/container";
 import Section from "@/app/components/section";
 
 export default function Home() {
-  let image = useColorModeValue("/river.jpeg", "/river-2.jpeg");
+  let image = useColorModeValue("/austin.jpg", "/austin.jpg");
   return (
     <div>
       <Box
-        minHeight="calc(90vh - 2rem)"
+        minHeight="calc(100vh - 1rem)"
+        mb={20}
         position="relative"
         display="flex"
         justifyContent={"center"}
@@ -35,10 +36,10 @@ export default function Home() {
         >
           <Box maxWidth={"500px"} textAlign={"center"}>
             <Heading mb={2}>Property Development</Heading>
-            <Text mb={4}>🌎</Text>
+            <Text mb={4}>Austin, TX 🇺🇸</Text>
 
             <HStack justifyContent={"center"}>
-              <Link href="/about" passHref>
+              <Link href="/services" passHref>
                 <Button
                   rounded="full"
                   _hover={{ opacity: 0.84 }}

@@ -27,6 +27,30 @@ function Component() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
+  const residentialServices = [
+    "Window Cleaning",
+    "Gutter Cleaning/Installation",
+    "Lights/Security Install",
+    "Painting",
+    "Installations",
+    "Mounting",
+    "Plumbing (Basic)",
+    "Garage Overhaul",
+    "Junk Removal",
+  ];
+
+  const commercialServices = [
+    "Window Cleaning",
+    "Gutter Cleaning/Installation",
+    "Lights/Security Install",
+    "Painting",
+    "Installations",
+    "Mounting",
+    "Plumbing (Basic)",
+    "Garage Overhaul",
+    "Junk Removal",
+  ];
+
   const pages = [
     {
       title: "Home",
@@ -34,8 +58,8 @@ function Component() {
     },
 
     {
-      title: "About",
-      slug: "/about",
+      title: "Services",
+      slug: "/services",
     },
 
     // {
@@ -59,7 +83,7 @@ function Component() {
         fontSize="2xl"
         size="lg"
         variant={"ghost"}
-        rounded="full"
+        rounded="lg"
         ref={btnRef}
         icon={<LuMenu />}
         onClick={onOpen}
@@ -67,13 +91,14 @@ function Component() {
 
       <Drawer
         isOpen={isOpen}
-        placement="top"
+        placement="right"
+        size="sm"
         onClose={onClose}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent textAlign="center">
-          <DrawerCloseButton rounded="full" size="lg" />
+        <DrawerContent>
+          <DrawerCloseButton rounded="lg" size="lg" />
 
           <DrawerBody>
             <Box mt={4} mb={10} fontSize="xl" fontWeight={600}>
@@ -82,6 +107,7 @@ function Component() {
             <Text title="subheader" mb={4} fontSize="sm" fontStyle={"italic"}>
               {/* Desig & Build */}
             </Text>
+
             <Stack mb={10} spacing={4} fontSize="lg">
               {pages.map((el, idx) => {
                 return (
@@ -92,6 +118,20 @@ function Component() {
                   </Box>
                 );
               })}
+
+              <Box mt={10}>
+                <Button
+                  as={ChakraLink}
+                  href="https://form.jotform.com/240057113782047"
+                  target="_blank"
+                  colorScheme="orange"
+                  rounded="full"
+                  _hover={{ opacity: 0.84, textDecoration: "none" }}
+                  size="lg"
+                >
+                  Book Now!
+                </Button>
+              </Box>
             </Stack>
           </DrawerBody>
 

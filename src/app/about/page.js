@@ -13,7 +13,6 @@ import Image from "next/image";
 
 export const metadata = {
   title: "About",
-  description: "Huck Finn Ventures",
 };
 
 function Page() {
@@ -26,18 +25,30 @@ function Page() {
               About
             </Heading>
 
-            <Box mb={10}>Huck Finn Ventures, LLC</Box>
+            <Box mb={10}>
+              We're a group of guys in NE Austin making the world a better place
+              one job at a time.{" "}
+            </Box>
+
+            <Box mb={10} letterSpacing={"2px"}>
+              🌎🌍🌏
+            </Box>
 
             <Divider mb={10} />
 
             <Heading size="lg" mb={5}>
-              Team
+              Services
             </Heading>
             <Box mb={10}>Sam Ullman</Box>
 
-            <Divider mb={10} />
+            {/* <Heading size="lg" mb={5}>
+              Team
+            </Heading>
+            <Box mb={10}>Sam Ullman</Box> */}
 
-            <Heading size="lg" mb={5}>
+            {/* <Divider mb={10} /> */}
+
+            {/* <Heading size="lg" mb={5}>
               Partners
             </Heading>
             <SimpleGrid columns={[1, 2, 3]} spacing={[10]}>
@@ -61,7 +72,7 @@ function Page() {
                   <Box>sambuilds.co</Box>
                 </Box>
               </a>
-            </SimpleGrid>
+            </SimpleGrid> */}
           </Box>
         </Container>
       </Section>

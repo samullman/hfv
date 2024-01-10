@@ -15,7 +15,7 @@ import {
 import Container from "@/app/components/container";
 import Section from "@/app/components/section";
 
-import { LuPhoneCall, LuMail, LuMapPin } from "react-icons/lu";
+import { LuPhoneCall, LuMail, LuMapPin, LuInstagram } from "react-icons/lu";
 
 export const metadata = {
   title: "Contact",
@@ -43,27 +43,44 @@ function Page() {
             </Box>
           </HStack> */}
 
-          <HStack mb={2}>
-            <Box>
-              <LuPhoneCall />
-            </Box>
+          <Box width="100%">
+            <HStack mb={2}>
+              <Box>
+                <LuPhoneCall />
+              </Box>
 
-            <Box>
-              <ChakraLink href="tel:9713235674">971-323-5674</ChakraLink>
-            </Box>
-          </HStack>
+              <Box>
+                <ChakraLink href="tel:9713235674">971-323-5674</ChakraLink>
+              </Box>
+            </HStack>
 
-          <HStack>
-            <Box>
-              <LuMail />
-            </Box>
+            <HStack mb={2}>
+              <Box>
+                <LuMail />
+              </Box>
 
-            <Box>
-              <ChakraLink href="mailto:hello@hf.ventures">
-                hello@hf.ventures
-              </ChakraLink>
-            </Box>
-          </HStack>
+              <Box>
+                <ChakraLink href="mailto:hello@hf.ventures">
+                  hello@hf.ventures
+                </ChakraLink>
+              </Box>
+            </HStack>
+
+            <HStack>
+              <Box>
+                <LuInstagram />
+              </Box>
+
+              <Box>
+                <ChakraLink
+                  href="https://instagram.com/huckfinnventures"
+                  target="_blank"
+                >
+                  Instagram
+                </ChakraLink>
+              </Box>
+            </HStack>
+          </Box>
           {/*
           <Divider my={5} />
 
