@@ -21,7 +21,6 @@ export default function Home() {
     <div>
       <Box
         minHeight="calc(100vh - 1rem)"
-        mb={20}
         position="relative"
         display="flex"
         justifyContent={"center"}
@@ -35,11 +34,11 @@ export default function Home() {
           flexDirection={"column"}
         >
           <Box maxWidth={"500px"} textAlign={"center"}>
-            <Heading mb={2}>Property Development</Heading>
+            <Heading mb={2}>Business & Personal Development</Heading>
             <Text mb={4}>Austin, TX 🇺🇸</Text>
 
             <HStack justifyContent={"center"}>
-              <Link href="/services" passHref>
+              <Link href="/about" passHref>
                 <Button
                   rounded="full"
                   _hover={{ opacity: 0.84 }}

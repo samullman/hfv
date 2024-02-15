@@ -27,9 +27,11 @@ function Page() {
     <div>
       <Section>
         <Container>
-          <Heading mt={5} mb={10}>
-            Contact
-          </Heading>
+          <Box width="100%">
+            <Heading mt={5} mb={10}>
+              Contact
+            </Heading>
+          </Box>
 
           {/* <HStack>
             <Box>

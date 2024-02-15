@@ -62,7 +62,7 @@ function Page() {
           </Box>
 
           <Box width="100%">
-            <SimpleGrid columns={[1, 1, 2]} mb={10} spacing={8}>
+            <SimpleGrid columns={[1, 1, 2]} mb={10} spacing={8} display="none">
               {SERVICES.map(({ title, slug, image }, idx) => {
                 return (
                   <Box key={"service-" + idx}>

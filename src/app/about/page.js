@@ -25,21 +25,11 @@ function Page() {
               About
             </Heading>
 
-            <Box mb={10}>
-              We're a group of guys in NE Austin making the world a better place
-              one job at a time.{" "}
-            </Box>
+            <Box mb={10}>Coming soon...</Box>
 
-            <Box mb={10} letterSpacing={"2px"}>
-              🌎🌍🌏
-            </Box>
-
-            <Divider mb={10} />
-
-            <Heading size="lg" mb={5}>
-              Services
+            <Heading mb={10} letterSpacing={"2px"}>
+              🌎
             </Heading>
-            <Box mb={10}>Sam Ullman</Box>
 
             {/* <Heading size="lg" mb={5}>
               Team

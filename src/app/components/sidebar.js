@@ -58,8 +58,8 @@ function Component() {
     },
 
     {
-      title: "Services",
-      slug: "/services",
+      title: "About",
+      slug: "/about",
     },
 
     // {
@@ -120,7 +120,7 @@ function Component() {
               })}
 
               <Box mt={10}>
-                <Button
+                {/* <Button
                   as={ChakraLink}
                   href="https://form.jotform.com/240057113782047"
                   target="_blank"
@@ -130,7 +130,7 @@ function Component() {
                   size="lg"
                 >
                   Book Now!
-                </Button>
+                </Button> */}
               </Box>
             </Stack>
           </DrawerBody>
