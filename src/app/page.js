@@ -16,11 +16,11 @@ import Container from "@/app/components/container";
 import Section from "@/app/components/section";
 
 export default function Home() {
-  let image = useColorModeValue("/austin.jpg", "/austin.jpg");
+  let image = useColorModeValue("/ocean.jpeg", "/ocean.jpeg");
   return (
     <div>
       <Box
-        minHeight="calc(100vh - 1rem)"
+        minHeight="calc(100vh)"
         position="relative"
         display="flex"
         justifyContent={"center"}
@@ -34,30 +34,16 @@ export default function Home() {
           flexDirection={"column"}
         >
           <Box maxWidth={"500px"} textAlign={"center"}>
-            <Heading mb={2}>Business & Personal Development</Heading>
-            <Text mb={4}>Austin, TX 🇺🇸</Text>
+            <Heading mb={2}>Creating Opportuniy</Heading>
+            <Text mb={4}>Austin, TX</Text>
 
             <HStack justifyContent={"center"}>
               <Link href="/about" passHref>
-                <Button
-                  rounded="full"
-                  _hover={{ opacity: 0.84 }}
-                  size="lg"
-                  colorScheme="blue"
-                >
-                  Learn more
-                </Button>
+                <Button colorScheme="blue">Our Philosophy</Button>
               </Link>
 
               <Link href="/contact" passHref>
-                <Button
-                  rounded="full"
-                  size="lg"
-                  _hover={{ opacity: 0.84 }}
-                  colorScheme="yellow"
-                >
-                  Contact
-                </Button>
+                <Button>Contact</Button>
               </Link>
             </HStack>
           </Box>

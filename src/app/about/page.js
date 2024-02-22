@@ -25,11 +25,19 @@ function Page() {
               About
             </Heading>
 
-            <Box mb={10}>Coming soon...</Box>
+            <Box mb={10}>
+              We believe in leaving the world a better place than we found it.{" "}
+            </Box>
 
-            <Heading mb={10} letterSpacing={"2px"}>
-              🌎
-            </Heading>
+            <Box mb={10}>
+              There are projects that most people don't want to do and we are
+              seeking to fill those gaps.{" "}
+            </Box>
+
+            <Box mb={10}>
+              We are currently developing services in the logistics space,
+              cleaning, and personal development coaching.
+            </Box>
 
             {/* <Heading size="lg" mb={5}>
               Team

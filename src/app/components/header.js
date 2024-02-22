@@ -5,13 +5,14 @@ import {
   Box,
   Link as ChakraLink,
   HStack,
+  Heading,
   useColorModeValue,
 } from "@chakra-ui/react";
 import MySidebar from "./sidebar";
 import ColorMode from "./colorMode";
 
 function Header() {
-  let bg = useColorModeValue("white", "gray.800");
+  let bg = useColorModeValue("#ffffff77", "gray.800");
 
   return (
     <div>
@@ -20,6 +21,7 @@ function Header() {
         zIndex="1000"
         width="100vw"
         bg={bg}
+        backdropFilter="blur(2px)"
         py={[3, 3, 4]}
         px={5}
       >
@@ -30,12 +32,12 @@ function Header() {
           justifyContent={"space-between"}
           alignItems="baseline"
         >
-          <Box title="title" pt="2px">
+          <Box title="title" pt={1}>
             <Link href="/" passHref>
               {" "}
               <ChakraLink
                 fontSize={"xl"}
-                fontWeight={600}
+                fontWeight={"bold"}
                 _hover={{ textDecoration: "none" }}
               >
                 Huck Finn Ventures
@@ -44,18 +46,12 @@ function Header() {
           </Box>
 
           <HStack>
-            <Box title="toggle-color-mode">
-              <ColorMode />
-            </Box>
-
             <Box title="hamburger">
               <MySidebar />
             </Box>
           </HStack>
         </Box>
       </Box>
-
-      <Box py={2} px={5}></Box>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import "@fontsource/barlow-semi-condensed";
+import "@fontsource-variable/source-code-pro";
+
 import { Providers } from "./providers";
 import Script from "next/script";
 import Header from "./components/header";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Huck Finn Ventures",
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
 
-      <body className={inter.className}>
+      <body>
         <Providers>
           <Header />
 

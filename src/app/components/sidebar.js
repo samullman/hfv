@@ -80,7 +80,7 @@ function Component() {
   return (
     <>
       <IconButton
-        fontSize="2xl"
+        fontSize="xl"
         size="lg"
         variant={"ghost"}
         rounded="lg"
@@ -91,14 +91,14 @@ function Component() {
 
       <Drawer
         isOpen={isOpen}
-        placement="right"
+        placement="top"
         size="sm"
         onClose={onClose}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton rounded="lg" size="lg" />
+          <DrawerCloseButton rounded="lg" />
 
           <DrawerBody>
             <Box mt={4} mb={10} fontSize="xl" fontWeight={600}>
